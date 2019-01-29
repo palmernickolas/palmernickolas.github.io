@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: 'resume', component: ResumeComponent },
   { path: 'contact', component: ContactComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
+  {path: '**', redirectTo: 'home'}
 ];
 
 @NgModule({
