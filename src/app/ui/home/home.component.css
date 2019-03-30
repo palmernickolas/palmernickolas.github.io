@@ -1,8 +1,27 @@
-.centered { 
-    text-align: center;
+.courier-new { 
     font-family: "Courier New";
 }
 
-.topPadding {
-    padding-top: 10%;
+@keyframes fadeIn {
+    from {
+        transform: translate3d(0, 50px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.fadeIn {
+    opacity: 0;
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
 }
