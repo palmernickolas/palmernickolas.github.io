@@ -5,3 +5,11 @@
 .row-height {
     height: 300px;
 }
+
+.remove-border {
+    border: none;
+}
+
+.div-margin {
+    margin-bottom: 20px;
+}

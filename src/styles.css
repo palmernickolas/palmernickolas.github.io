@@ -29,3 +29,11 @@
 h3 {
     word-wrap: break-word
 }
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image:url("assets/img/background.png");
+}
