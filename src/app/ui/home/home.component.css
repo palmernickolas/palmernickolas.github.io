@@ -1,3 +1,7 @@
 .courier-new { 
     font-family: "Courier New";
 }
+
+.row-height {
+    height: 300px;
+}

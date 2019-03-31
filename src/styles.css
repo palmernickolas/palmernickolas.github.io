@@ -25,3 +25,7 @@
     animation-name: fadeIn;
     -webkit-animation-name: fadeIn;
 }
+
+h3 {
+    word-wrap: break-word
+}
