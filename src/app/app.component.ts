@@ -9,5 +9,7 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'Nick Palmer';
 
-
+scrollToTop(event) {
+  window.scroll(0,0);
+}
 }
