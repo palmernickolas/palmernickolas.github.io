@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "personal-website": {
+    "palmernickolas.github.io": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/personal-website",
+            "outputPath": "dist/palmernickolas.github.io",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -57,18 +57,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "personal-website:build"
+            "browserTarget": "palmernickolas.github.io:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "personal-website:build:production"
+              "browserTarget": "palmernickolas.github.io:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "personal-website:build"
+            "browserTarget": "palmernickolas.github.io:build"
           }
         },
         "test": {
@@ -102,7 +102,7 @@
         }
       }
     },
-    "personal-website-e2e": {
+    "palmernickolas.github.io-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -111,11 +111,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "personal-website:serve"
+            "devServerTarget": "palmernickolas.github.io:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "personal-website:serve:production"
+              "devServerTarget": "palmernickolas.github.io:serve:production"
             }
           }
         },
@@ -131,5 +131,5 @@
       }
     }
   },
-  "defaultProject": "personal-website"
+  "defaultProject": "palmernickolas.github.io"
 }
