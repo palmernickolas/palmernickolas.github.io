@@ -1,15 +1,60 @@
-.my-logo {
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.home-logo {
     width: 30vw;
+}
+
+.image {
+    text-align: center;
+    display: block;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 10vh;
+  border-bottom: 3px solid black;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: gray
+}
+
+/* TODO: partially consolidate this with link box */
+.header-item {
+    width: 20vw;
+    height: 10vh;
+    font-size: 1vw;
+    background-color: gray;
+    color: white;
+    border: 1px solid #bd1e2c;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.header-logo {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .link-box {
     width: 15vw;
     height: 15vw;
     font-size: 3vw;
-    font-family: 'Roboto', sans-serif;
     border: 2px solid black;
-    margin: 100px;
-    background-color: #01adee;
+    margin: 10vw;
+    background-color:#bd1e2c;
     color: white;
     border: 1px solid white;
     border-radius: 10px;
@@ -22,8 +67,8 @@
     flex-direction: row;
 }
 
-.link-box:hover {
-    background-color: #bd1e2c;
+.link-box:hover, .header-link:hover {
+    background-color:  #01adee;
 }
 
 .main-container,
@@ -45,6 +90,11 @@
     background-image: url("../../../assets/img/background.png");
 }
 
+.job-logo {
+    width: 15vw;
+    margin: 5vw;
+}
+
 .about-me-container {
     background-color: #2a4158;
 }
@@ -61,7 +111,25 @@
     background-color: #597387;
 }
 
+.middle-sentence {
+    color: #bd1e2c;
+}
+
+.about-sentence {
+    color: gray;
+}
+
+.about-content {
+    font-size: 3vw;
+    text-align: justify;
+    padding: 10vw;
+}
 
 .row {
-    width: 100%;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }

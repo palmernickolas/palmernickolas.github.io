@@ -1,18 +1,44 @@
+<!-- <div class="header row">
+  <div (click)="aboutMe()" class="header-item">About Me</div>
+  <div (click)="resume()" class="header-item">Resume</div>
+  <div class="header-item">
+  <img class="header-logo" src="../../../assets/img/logo.png"/>
+  </div>
+  <div (click)="contact()" class="header-item">Contact</div>
+  <div (click)="projects()" class="header-item">Projects</div>
+</div> -->
 <div class="main-container">
   <div class="row">
     <div (click)="aboutMe()" class="link-box">About Me</div>
     <div (click)="resume()" class="link-box">Resume</div>
   </div>
-  <div class="row">
-    <img class="my-logo" src="../../../assets/img/logo.png"/>
+  <div class="row image">
+    <img class="home-logo" src="../../../assets/img/logo.png"/>
   </div>
   <div class="row">
     <div (click)="contact()" class="link-box">Contact</div>
     <div (click)="projects()" class="link-box">Projects</div>
   </div>
 </div>
-<div class="about-me-container">about placeholder</div>
-<div class="resume-container">resume placeholder</div>
+<div class="about-me-container">
+    <div class="about-content">
+      <span class="about-sentence">My name is Nick Palmer and I'm a software developer.<br></span>
+      <span class="middle-sentence">In May 2020, I graduated with a Bachelor of Science in Computer Science & Engineering from The Ohio State University.</span>
+      <br><span class="about-sentence">I now live in Chicago, IL.</span>
+    </div>
+</div>
+<div class="resume-container">
+  <!-- TODO: put where I've worked
+  And download resume button below it -->
+  <div style="width: 100vw">Places I've worked (this needs to be in its own row)</div>
+  <div class="row">
+    <img class="job-logo" src="../../../assets/img/odot.png"/>
+    <img class="job-logo" src="../../../assets/img/build-in-motion.png"/>
+    <img class="job-logo" src="../../../assets/img/honda.png"/>
+    <img class="job-logo" src="../../../assets/img/the-dev-shop.png"/>
+  </div>
+  <!--Put in download resume button-->
+</div>
 <div class="contact-container">contact placeholder</div>
 <div class="projects-container">projects placeholder</div>
 <router-outlet></router-outlet>
