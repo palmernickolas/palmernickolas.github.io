@@ -1,15 +1,67 @@
-.courier-new { 
-    font-family: "Courier New";
+.my-logo {
+    width: 30vw;
 }
 
-.row-height {
-    height: 300px;
+.link-box {
+    width: 15vw;
+    height: 15vw;
+    font-size: 3vw;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid black;
+    margin: 100px;
+    background-color: #01adee;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
 
-.remove-border {
-    border: none;
+.link-box:hover {
+    background-color: #bd1e2c;
 }
 
-.div-margin {
-    margin-bottom: 20px;
+.main-container,
+.about-me-container,
+.contact-container,
+.resume-container,
+.projects-container {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.main-container {
+    background-image: url("../../../assets/img/background.png");
+}
+
+.about-me-container {
+    background-color: #2a4158;
+}
+
+.contact-container {
+    background-color: #22272c;
+}
+
+.resume-container {
+    background-color: #8c9ea3;
+}
+
+.projects-container {
+    background-color: #597387;
+}
+
+
+.row {
+    width: 100%;
 }

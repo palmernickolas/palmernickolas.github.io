@@ -12,4 +12,24 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  aboutMe() {
+    var aboutSection: HTMLElement = document.getElementsByClassName('about-me-container')[0] as HTMLElement;
+    aboutSection.scrollIntoView({behavior: 'smooth'});
+  }
+
+  resume() {
+    var aboutSection: HTMLElement = document.getElementsByClassName('resume-container')[0] as HTMLElement;
+    aboutSection.scrollIntoView({behavior: 'smooth'});
+  }
+
+  projects() {
+    var aboutSection: HTMLElement = document.getElementsByClassName('projects-container')[0] as HTMLElement;
+    aboutSection.scrollIntoView({behavior: 'smooth'});
+  }
+
+  contact() {
+    var aboutSection: HTMLElement = document.getElementsByClassName('contact-container')[0] as HTMLElement;
+    aboutSection.scrollIntoView({behavior: 'smooth'});
+  }
+
 }

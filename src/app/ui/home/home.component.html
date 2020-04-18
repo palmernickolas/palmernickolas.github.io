@@ -1,25 +1,19 @@
-<app-layout>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-9">
-        <div class="jumbotron row-height text-center courier-new d-flex align-items-center">
-          <div class="animated fadeIn">
-            <h1>Nick Palmer</h1>
-            <h2>Computer Science & Engineering Student at Ohio State</h2>
-          </div>
-        </div>
-      </div>
-      <img class="col-lg-3 max-img-height text-center div-margin row-height" src="assets/img/my_picture.png" />
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="jumbotron text-center courier-new d-flex align-items-center" style="font-size: 1.5em;">
-          <p class="animated fadeIn">Hi there! Welcome to my site. I am a senior at Ohio State majoring in Computer Science & Engineering.
-            For more information about me, please click <a routerLink="/about">here</a>.
-          </p>
-        </div>
-      </div>
-    </div>
+<div class="main-container">
+  <div class="row">
+    <div (click)="aboutMe()" class="link-box">About Me</div>
+    <div (click)="resume()" class="link-box">Resume</div>
   </div>
-</app-layout>
+  <div class="row">
+    <img class="my-logo" src="../../../assets/img/logo.png"/>
+  </div>
+  <div class="row">
+    <div (click)="contact()" class="link-box">Contact</div>
+    <div (click)="projects()" class="link-box">Projects</div>
+  </div>
+</div>
+<div class="about-me-container">about placeholder</div>
+<div class="resume-container">resume placeholder</div>
+<div class="contact-container">contact placeholder</div>
+<div class="projects-container">projects placeholder</div>
 <router-outlet></router-outlet>
+<!--todo: split up components/containers-->
