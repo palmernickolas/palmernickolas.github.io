@@ -8,7 +8,7 @@ import { ProjectsComponent } from './ui/projects/projects.component';
 import { AppComponent } from './app.component'
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'resume', component: ResumeComponent },
   { path: 'projects', component: ProjectsComponent },

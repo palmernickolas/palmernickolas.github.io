@@ -74,7 +74,6 @@
 .main-container,
 .about-me-container,
 .contact-container,
-.resume-container,
 .projects-container {
     width: 100vw;
     height: 100vh;
@@ -86,13 +85,63 @@
     flex-direction: row;
 }
 
+.resume-list {
+    width: 100vw;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.resume-container {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
 .main-container {
     background-image: url("../../../assets/img/background.png");
 }
 
 .job-logo {
-    width: 15vw;
-    margin: 5vw;
+    max-width: 175px;
+    margin: 3vw;
+}
+
+.button-container {
+    width: 100vw;
+    text-align: center;
+}
+
+.resume-title {
+    width: 100vw; 
+    text-align: center;
+    color: #2a4158;
+}
+
+.resume-button {
+    border: 1px solid #01adee;
+    background-color: #bd1e2c;
+    color: black;
+    width: 20vw;
+    height: 5vh;
+}
+
+.job-logo:hover {
+    filter: grayscale(70%);
+
+}
+
+.resume-button:hover {
+    border: 1px solid #bd1e2c;
+    background-color: #01adee;
 }
 
 .about-me-container {
@@ -130,6 +179,6 @@
     align-content: center;
     justify-items: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: row;
 }
