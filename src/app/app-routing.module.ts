@@ -6,7 +6,6 @@ import { AboutComponent } from './ui/about/about.component';
 import { ExperienceComponent } from './ui/experience/experience.component';
 import { ProjectsComponent } from './ui/projects/projects.component';
 import { ContactComponent } from './ui/contact/contact.component';
-import { AppComponent } from './app.component'
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
