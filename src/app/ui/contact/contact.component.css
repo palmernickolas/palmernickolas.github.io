@@ -10,3 +10,11 @@ h1 {
     width: 75%;
     padding-left: 5px;
 }
+
+section {
+    margin: 25px;
+}
+
+.thanks-msg {
+    padding: 25px;
+}
