@@ -17,8 +17,8 @@ export class HomeComponent implements OnInit {
     aboutSection.scrollIntoView({behavior: 'smooth'});
   }
 
-  resume() {
-    var aboutSection: HTMLElement = document.getElementsByClassName('resume-container')[0] as HTMLElement;
+  experience() {
+    var aboutSection: HTMLElement = document.getElementsByClassName('experience-container')[0] as HTMLElement;
     aboutSection.scrollIntoView({behavior: 'smooth'});
   }
 
