@@ -26,6 +26,8 @@
 
 .experience-container {
     background-color: #8c9ea3;
+    padding: 5vw;
+
 }
 
 .experience-button:hover {
@@ -41,4 +43,8 @@
 .job-logo:hover {
     filter: grayscale(70%);
 
+}
+
+.button {
+    margin-top: -50px;
 }

@@ -1,4 +1,28 @@
 <app-layout>
-  <h1 class="text-center">Contact</h1>
-  
+  <section class="animated fadein bg-dark">
+    <div class="container">
+      <h1 class="text-white">Contact Me</h1>
+      <form (ngSubmit)="submitForm(nameInput, emailInput, userMessageInput)">
+        <div class="field">
+          <input type="text" name="name" class="input" [(ngModel)]="name" placeholder="Your Name" #nameInput="ngModel" required>
+        </div>
+        <div class="text-white error" *ngIf="nameInput.invalid && nameInput.dirty">
+          Name is required.
+        </div>
+        <div class="field">
+          <input type="email" name="email" class="input" [(ngModel)]="email" placeholder="Your Email" #emailInput="ngModel" email required>
+        </div>
+        <div class="text-white error" *ngIf="emailInput.invalid && emailInput.dirty">
+          Email is required and must be valid.
+        </div>
+        <div class="field">
+          <textarea class="textarea" name="user_message"[(ngModel)]="user_message"  placeholder="Your message" #userMessageInput="ngModel" required></textarea>
+        </div>
+        <div class="text-white error" *ngIf="userMessageInput.invalid && userMessageInput.dirty">
+          A message is required
+        </div>
+        <button type="submit" class="btn btn-light">Send Message</button>
+      </form>
+    </div>
+    </section>
 </app-layout>

@@ -1,0 +1,12 @@
+h1 {
+    padding-top: 30px;
+}
+
+.field, button, h1, .error {
+    margin: 25px;
+}
+
+.field > input, .field > textarea {
+    width: 75%;
+    padding-left: 5px;
+}

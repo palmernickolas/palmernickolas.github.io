@@ -9,12 +9,14 @@ import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
+import { FormsModule }   from '@angular/forms';
 
 @NgModule({
   declarations: [LayoutComponent, HomeComponent, AboutComponent, ExperienceComponent, ProjectsComponent, ContactComponent, HeaderComponent, FooterComponent],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
   exports: [LayoutComponent, AboutComponent, ExperienceComponent, ProjectsComponent, ContactComponent]
 })
