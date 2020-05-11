@@ -1,12 +1,20 @@
 img {
     margin-top: 10px;
-    height: 225px;
+    width: 100%;
 }
 
 .card {
-    margin: 20px;
+    margin: 10px;
+    height: 60vh;
+    overflow: scroll;
 }
 
 .row {
-    width: 100vw;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 25px;
 }

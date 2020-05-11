@@ -8,8 +8,11 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  name: string;
+  email: string;
+  user_message: string;
   private url: string = 'https://formspree.io/xvowggjl';
-  private formGroup: FormGroup;
+  formGroup: FormGroup;
   messageSent: boolean = false;
 
   constructor(private formBuilder: FormBuilder, private httpClient: HttpClient) { }
