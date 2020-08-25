@@ -16,7 +16,7 @@
           Email is required and must be valid.
         </div>
         <div class="field">
-          <textarea class="textarea" id="message" (change)="onMessageChange($event)" name="user_message" [(ngModel)]="user_message"  placeholder="Your message" #userMessageInput="ngModel" required [ngModelOptions]="{standalone: true}"></textarea>
+          <textarea class="textarea" id="message" (change)="onMessageChange($event)" name="user_message" [(ngModel)]="user_message"  placeholder="Your Message" #userMessageInput="ngModel" required [ngModelOptions]="{standalone: true}"></textarea>
         </div>
         <div class="text-white error" *ngIf="userMessageInput.invalid && userMessageInput.dirty">
           A message is required.
